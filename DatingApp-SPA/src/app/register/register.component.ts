@@ -16,10 +16,10 @@ export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
   user: User;
   registerForm: FormGroup;
-  bsConfig: Partial<BsDatepickerConfig>
+  bsConfig: Partial<BsDatepickerConfig>;
 
   constructor(private authService: AuthService, private alertify: AlertifyService,
-             private fb: FormBuilder, private router: Router) { }
+              private fb: FormBuilder, private router: Router) { }
 
   ngOnInit() {
     this.bsConfig = {
